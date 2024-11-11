@@ -1,0 +1,50 @@
+1 - npm install mongodb
+2 - 'mongodb+srv://joaoeduardo:ylr4u70pwcoZdNps@cluster0.ae7gl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+3 - npm start
+
+---------------------------------------------//--------------------------------------------
+
+1- Obter professores GET:
+http://localhost:3000/professores
+
+2- Obter por ID GET:
+http://localhost:3000/professores/2
+
+3- Obter turma do professor GET:
+http://localhost:3000/professores/2/turmas
+
+4- Atualizar Professor PUT:
+http://localhost:3000/professores/2
+
+json:
+
+{
+  "nome": "Prof. Carlos Silva",
+  "idade": 45,
+  "departamento": "Matemática"
+}
+
+5- Adicionar Turma a um Professor POST:
+http://localhost:3000/professores/2/turmas
+
+json:
+
+{
+  "codigo": "11A",
+  "disciplina": "Física",
+  "alunos": ["João", "Maria", "Pedro"]
+
+6- Obter professor pelo departamento GET:
+http://localhost:3000/professores/departamento/Matemática
+
+7- Deletar Professor DELETE (1 vez):
+http://localhost:3000/professores/3
+
+
+
+
+
+
+
+
+ 
